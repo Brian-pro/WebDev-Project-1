@@ -1,0 +1,64 @@
+/* 
+COLOR IDEAS
+#EAE7DC
+#D8C3A5
+#8E8D8A
+#E98074
+#E85A4F
+*/
+
+/* font-face */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header! */
+.container {
+    display: grid; /* using css grid */
+    grid-template-columns: 1fr; /* 1fr is full length of screen for column (100%) */
+}
+
+.nav-bar {
+    display: flex; /* flex allows the items to not be stacked */
+    justify-content: space-between; /* puts the enought space between left and right side of nav sections to fill entire page (left to right) */
+    padding: 38px;
+}
+
+
+/* Left side of nav bar */
+.left-side {
+    display: flex;
+}
+
+.nav-bar > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent; 
+    transition: border-bottom 0.5s;
+}
+
+.link-wrapper a {
+    color:#412923;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.link-wrapper a:hover {
+    color: black;
+}
+
+
